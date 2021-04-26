@@ -1,0 +1,49 @@
+{
+	"folders": {},
+	"connections": {
+		"mysql5-1790b9733c7-470e37c49fe7d84b": {
+			"provider": "mysql",
+			"driver": "mysql5",
+			"name": "localhost",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"configuration": {
+				"host": "localhost",
+				"port": "3306",
+				"url": "jdbc:mysql://localhost:3306/",
+				"home": "C:\\Program Files\\MySQL\\MySQL Server 5.7",
+				"type": "dev",
+				"auth-model": "native"
+			}
+		},
+		"mysql5-1790bb60fdc-6ba89234c4ca922d": {
+			"provider": "mysql",
+			"driver": "mysql5",
+			"name": "dog_shoppingmall",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"configuration": {
+				"host": "localhost",
+				"port": "3306",
+				"database": "dog_shoppingmall",
+				"url": "jdbc:mysql://localhost:3306/dog_shoppingmall",
+				"home": "C:\\Program Files\\MySQL\\MySQL Server 5.7",
+				"type": "dev",
+				"auth-model": "native",
+				"handlers": {}
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false
+		}
+	}
+}
