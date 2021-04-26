@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Context>
    <Resource 
-      name="jdbc/web_gradle_erp" 
-      username="user_gradle_erp"
+      name="jdbc/dog_shoppingmall_proj" 
+      username="user_dog_shoppingmall"
       password="rootroot" 
-      url="jdbc:mysql://localhost:3306/web_gradle_erp?useSSL=false" 
+      url="jdbc:mysql://localhost:3306/dog_shoppingmall?useSSL=false" 
       
       auth="Container"
       type="javax.sql.DataSource" 
       driverClassName="com.mysql.jdbc.Driver"
       factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory"
-      maxTotal="100" 
-      maxIdle="10" 
+      maxTotal="100000" 
+      maxIdle="100" 
       maxWaitMillis="-1" />
 </Context>

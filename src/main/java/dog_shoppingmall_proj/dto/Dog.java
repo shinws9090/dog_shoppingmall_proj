@@ -1,15 +1,15 @@
 package dog_shoppingmall_proj.dto;
 
 public class Dog {
-	private int id;
-	private String king;
-	private int price;
+	private int    id;
+	private String kind;
+	private int    price;
 	private String image;
 	private String country;
-	private int height;
-	private int weight;
+	private int    height;
+	private int    weight;
 	private String content;
-	private int readcount;
+	private int    readcount;
 	
 	
 	
@@ -17,11 +17,11 @@ public class Dog {
 	}
 
 
-	public Dog(int id, String king, int price, String image, String country, int height, int weight, String content,
+	public Dog(int id, String kind, int price, String image, String country, int height, int weight, String content,
 			int readcount) {
 		super();
 		this.id = id;
-		this.king = king;
+		this.kind = kind;
 		this.price = price;
 		this.image = image;
 		this.country = country;
@@ -43,12 +43,12 @@ public class Dog {
 
 
 	public String getKing() {
-		return king;
+		return kind;
 	}
 
 
-	public void setKing(String king) {
-		this.king = king;
+	public void setKing(String kind) {
+		this.kind = kind;
 	}
 
 
@@ -126,7 +126,7 @@ public class Dog {
 	public String toString() {
 		return String.format(
 				"Dog [id=%s, king=%s, price=%s, image=%s, country=%s, height=%s, weight=%s, content=%s, readcount=%s]",
-				id, king, price, image, country, height, weight, content, readcount);
+				id, kind, price, image, country, height, weight, content, readcount);
 	}
 	
 	

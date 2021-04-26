@@ -19,7 +19,7 @@ public class JndiDS {
 		
 		try{
 			Context init = new InitialContext(); //JNDI 서버객체 생성
-			ds = (DataSource)init.lookup("java:comp/env/jdbc/web_gradle_erp"); //룩업()
+			ds = (DataSource)init.lookup("java:comp/env/jdbc/dog_shoppingmall_proj"); //룩업()
 //			System.out.println("ds : " + ds);
 		}catch(NamingException e){
 			e.printStackTrace();
@@ -34,5 +34,25 @@ public class JndiDS {
 			e.printStackTrace();
 		}
 		return null;
+	}
+	
+	public static void commit(Connection con) {
+			try {
+				con.commit();
+				System.out.println("commit success");
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		
+	}
+	
+	public static void rollback(Connection con) {
+		try {
+			con.rollback();
+			System.out.println("rollback success");
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
 	}
 }

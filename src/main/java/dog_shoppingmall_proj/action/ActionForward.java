@@ -1,4 +1,4 @@
-package dog_shoppingmall_proj.dto;
+package dog_shoppingmall_proj.action;
 
 public class ActionForward {
 	private String path;
@@ -9,10 +9,9 @@ public class ActionForward {
 	public ActionForward() {
 	}
 
-	public ActionForward(String path, boolean rediract) {
+	public ActionForward(String path) {
 		super();
 		this.path = path;
-		this.rediract = rediract;
 	}
 
 	public String getPath() {

@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import dog_shoppingmall_proj.action.Action;
-import dog_shoppingmall_proj.dto.ActionForward;
+import dog_shoppingmall_proj.action.ActionForward;
 
 @WebServlet(urlPatterns = { "*.do" }, 
 			loadOnStartup = 1, 
