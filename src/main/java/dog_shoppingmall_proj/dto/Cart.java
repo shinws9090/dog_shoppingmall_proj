@@ -12,6 +12,10 @@ public class Cart {
 		this.price = price;
 		this.qty = qty;
 	}
+	
+	public Cart() {
+	}
+
 	public String getImage() {
 		return image;
 	}

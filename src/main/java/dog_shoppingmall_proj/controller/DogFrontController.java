@@ -17,6 +17,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import dog_shoppingmall_proj.action.Action;
 import dog_shoppingmall_proj.action.ActionForward;
+import dog_shoppingmall_proj.action.NullAction;
 
 @WebServlet(urlPatterns = { "*.do" }, 
 			loadOnStartup = 1, 
@@ -25,7 +26,7 @@ import dog_shoppingmall_proj.action.ActionForward;
 				name = "configFile", 
 				value = "/WEB-INF/commandAction.properties") 
 					}) // 뭐여이게
-public class Controller extends HttpServlet {
+public class DogFrontController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private Map<String, Action> actionMap = new HashMap<String, Action>();
 
@@ -44,7 +45,7 @@ public class Controller extends HttpServlet {
 					cls = Class.forName((String) entry.getValue());
 					action = (Action) cls.newInstance();
 				}catch(ClassNotFoundException e ){
-//					action = new NullAction();
+					action = new NullAction();
 					e.printStackTrace();
 				}
 				actionMap.put((String) entry.getKey(), action);

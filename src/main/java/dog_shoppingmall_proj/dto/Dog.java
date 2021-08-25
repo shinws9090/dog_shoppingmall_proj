@@ -32,6 +32,18 @@ public class Dog {
 	}
 
 
+	public Dog(String kind, int price, String image, String country, int height, int weight, String content
+			) {
+		this.kind = kind;
+		this.price = price;
+		this.image = image;
+		this.country = country;
+		this.height = height;
+		this.weight = weight;
+		this.content = content;
+	}
+
+
 	public int getId() {
 		return id;
 	}
@@ -42,12 +54,12 @@ public class Dog {
 	}
 
 
-	public String getKing() {
+	public String getKind() {
 		return kind;
 	}
 
 
-	public void setKing(String kind) {
+	public void setKind(String kind) {
 		this.kind = kind;
 	}
 

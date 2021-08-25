@@ -9,16 +9,25 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
-    <error-page> <!-- 예외처리 -->
-	<error-code>500</error-code>
-	<location>/errorPage/500.jsp</location>
-	</error-page>
-	<error-page>
-	<error-code>404</error-code>
-	<location>/errorPage/404.jsp</location>
-	</error-page>
-	<error-page>
-		<exception-type>java.lang.NullPointerException</exception-type>
-	<location>/errorPage/null.jsp</location>
-	</error-page>
+  <error-page>
+    <error-code>500</error-code>
+    <location>/errorPage/500.jsp</location>
+  </error-page>
+  <error-page>
+    <error-code>404</error-code>
+    <location>/errorPage/404.jsp</location>
+  </error-page>
+  <error-page>
+    <exception-type>java.lang.NullPointerException</exception-type>
+    <location>/errorPage/null.jsp</location>
+  </error-page>
+  <filter>
+    <display-name>CharacterEncodingFilt</display-name>
+    <filter-name>CharacterEncodingFilt</filter-name>
+    <filter-class>dog_shoppingmall_proj.filter.CharacterEncodingFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>CharacterEncodingFilt</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
 </web-app>
